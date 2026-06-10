@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffae9;
+}
+header{
+    margin: 0;
+    padding: 10px;
+    background-color: #af0d18;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 45px;   
+    font-family:cursive
+    
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #980b14;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+main {
+    padding: 20px;
+    font-size: 18px;
+
+}
+
+.inicio h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 80px;
+    padding: 60px;
+}
+
+h2{
+    color:#980b14;
+    font-size: 30px;
+}
+
+img{
+    float: left;
+}
+.livro-do-mes:after{
+  content: "";
+  clear: both;
+  display: table;}
+
+h3{
+    color: rgb(149, 11, 11);
+    font-size: 25px;
+}
+
