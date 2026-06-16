@@ -4,15 +4,16 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fffae9;
 }
-header{
-    margin: 0;
-    padding: 10px;
-    background-color: #0d63af;
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1c465f;
     color: rgb(0, 0, 0);
+    padding: 10px;
     text-align: center;
-    font-size: 45px;   
-    font-family:cursive
-    
+    position: sticky;
+    top: 0;
 }
 
 .logo{
@@ -20,17 +21,6 @@ header{
     height: 50px;
     margin-right: 10px;
     border-radius: 50%;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #980b14;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
 }
 
 nav ul {
@@ -41,6 +31,18 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+
+header{
+    margin: 0;
+    padding: 130px;
+    background-color: #267baf;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 45px;   
+    font-family:cursive
+    
+}
+
 
 nav ul li a {
   display: block;
@@ -67,7 +69,7 @@ main {
 }
 
 h2{
-    color:#980b14;
+    color:#123c64;
     font-size: 30px;
 }
 
@@ -80,7 +82,14 @@ img{
   display: table;}
 
 h3{
-    color: rgb(149, 11, 11);
+    color: rgb(9, 39, 60);
     font-size: 25px;
+}
+
+.oqueé{
+    display: flex;
+}
+h4{
+    color: #123c64;
 }
 
