@@ -44,14 +44,14 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 660px;
+    min-height: 640px;
 
     color: rgb(255, 255, 255);
     font-size: 70px;   
     font-family:cursive;
     display: flex;
     justify-content: center;
-    align-items: center; /* Garante o alinhamento horizontal também */
+    align-items: center;
     
 }
 
@@ -82,7 +82,7 @@ main {
 
 h2{
     color:#123c64;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 img{
@@ -95,13 +95,14 @@ img{
 
 h3{
     color: rgb(57, 105, 139);
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .oqueé{
     display: flex;
 }
 h4{
+    font-size: 25px;
     color: #6c9dcb;
 }
 
