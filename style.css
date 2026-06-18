@@ -106,3 +106,68 @@ h4{
     color: #6c9dcb;
 }
 
+.planos{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+}
+
+
+.box {
+    background-color: #c4effd;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    max-width: 320px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.box h3 {
+    color: #858f9f;
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.box h2 {
+    color: #304a79;
+    font-size: 30px;
+}
+
+.box p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.box h4 {
+    color: #223659;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.box ul {
+    list-style-type:circle;
+    padding-left: 2px;
+    margin: 2px;
+}
+
+.box ul li {
+    color: #4a5568;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px; /* Espaço para o novo marcador */
+}
+
