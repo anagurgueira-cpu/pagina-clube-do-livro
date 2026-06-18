@@ -4,11 +4,33 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fffae9;
 }
+
+
+img{
+    float: left;
+}
+
+h2 {
+    color: #123c64;
+    font-size: 50px;
+}
+
+h3 {
+    color: rgb(57, 105, 139);
+    font-size: 35px;
+}
+
+h4 {
+    color: #6c9dcb;
+    font-size: 25px;
+}
+
+
+/* Estilos para a barra de navegação */
 nav {
     display: flex;
     align-items: flex-end;  
-    background-color: #0e3d6b;
-    color: rgb(0, 0, 0);
+    background-color:#0e3d6b;
     padding: 10px 20px;
     position: sticky;
     top: 0;
@@ -31,10 +53,11 @@ nav ul {
     margin: 0 auto; 
 }
 
-/* Espaçamento entre os links do menu */
 nav ul li {
     margin: 0 20px;
 }
+
+/* Estilos para o cabeçalho */
 header{
     margin: 0;
     padding: 0;
@@ -51,8 +74,7 @@ header{
     font-family:cursive;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 
@@ -67,54 +89,25 @@ nav ul li a:hover {
   color: rgb(0, 0, 0);
 }
 
-main {
-    padding: 20px;
-    font-size: 18px;
-
-}
-
-.inicio h1{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 80px;
-    padding: 60px;
-}
-
-h2{
-    color:#123c64;
-    font-size: 50px;
-}
-
-img{
-    float: left;
-}
-.livro-do-mes:after{
-  content: "";
-  clear: both;
-  display: table;}
-
-h3{
-    color: rgb(57, 105, 139);
-    font-size: 35px;
-}
-
 .oqueé{
     display: flex;
 }
-h4{
-    font-size: 25px;
-    color: #6c9dcb;
+
+.livro-do-mes:after{
+  content: "";
+  clear: both;
+  display: table;
 }
 
+/*caixa dos planos de assinatura*/
 .planos{
     display: flex;
     justify-content: space-between;
     align-items:start;
 }
 
-
 .box {
-    background-color: #c4effd;
+    background-color: #aabfec;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     padding: 24px;
@@ -130,7 +123,7 @@ h4{
 }
 
 .box h3 {
-    color: #858f9f;
+    color: #7a818c;
     font-size: 15px;
     margin-bottom: 8px;
     margin-top: 0;
@@ -143,14 +136,14 @@ h4{
 
 .box p {
     color: #4a5568;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
 .box h4 {
     color: #223659;
-    font-size: 1rem;
+    font-size: 15px;
     margin-bottom: 10px;
     font-weight: 600;
 }
@@ -165,9 +158,22 @@ h4{
 .box ul li {
     color: #4a5568;
     font-size: 15px;
-    line-height: 1.4;
+    font-weight: 500;
     margin-bottom: 8px;
     position: relative;
-    padding-left: 20px; /* Espaço para o novo marcador */
+    padding-left: 20px; 
 }
 
+footer {
+    background-color: #0e3d6b;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
