@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffae9;
+     font-weight: 500;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    display: flex;
+    align-items: flex-end;  
+    background-color:#0e3d6b;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0; 
+}
+
+nav ul {
+    font-size: 25px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: flex-end; 
+    margin: 0 auto; 
+}
+
+nav ul li {
+    margin: 0 20px;
+}
