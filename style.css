@@ -2,13 +2,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fffae9;
-     font-weight: 500;
+    background-color: #fff8e1;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 
 img{
     float: left;
+    margin-right: 20px;
+    margin-left: 30px;
+    width: 200px;
+    height: auto;
 }
 
 h2 {
@@ -25,7 +30,6 @@ h4 {
     color: #6c9dcb;
     font-size: 25px;
 }
-
 
 /* Estilos para a barra de navegação */
 nav {
@@ -93,6 +97,13 @@ header{
 
 .oqueé{
     display: flex;
+}
+
+livro-do-mes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .livro-do-mes:after{
@@ -177,4 +188,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 15px;
 }
