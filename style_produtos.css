@@ -6,19 +6,30 @@ body {
      font-weight: 500;
 }
 
+h1 {
+    color: #123c64;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 70px;
+}
+
 /* Estilos para a barra de navegação */
 nav {
     display: flex;
-    align-items: flex-end;  
+    align-items: center;  
+    justify-content: space-between;
     background-color:#0e3d6b;
-    padding: 10px 20px;
+    padding: 10px 40px;
     position: sticky;
     top: 0;
     width: 100%; 
     box-sizing: border-box; 
+    z-index: 1000;
 }
 
 .logo {
+    display: block; /* Evita comportamentos estranhos em linha */
+    float: none;    /* Anula o float da regra geral acima */
     width: 100px;
     height: auto;
     margin: 0; 
@@ -29,34 +40,31 @@ nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    align-items: flex-end; 
-    margin: 0 auto; 
+    margin: 0;
+    align-items: center; 
+    font-weight: 500;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin-left:20px;
+    margin-right:40px;
 }
 
-
 nav ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: capitalize; /* Deixa a primeira letra maiúscula automaticamente */
+    transition: color 0.2s ease;
 }
 
 nav ul li a:hover {
-  color: rgb(0, 0, 0);
+    color: #071e33; 
 }
 
-
-h1 {
-    color: #123c64;
-    font-size: 80px;
-    text-align: center;
-    margin-top: 70px;
-}
 .produtos-container {
+    align-content: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,10 +80,19 @@ h1 {
     width: 300px;
 }
 
-.card img{
+.card-img{
     width: 260px;
     height: 300px;
     border-radius: 4px;
     align-items: center;
 
+}
+
+footer {
+    background-color: #0e3d6b;  /*cor de fundo do rodape*/
+    color: white;  /*cor da fonte*/
+    text-align: center;  /*alinha o texto no centro*/
+    margin-top: 40px;  /*distância do topo*/
+    padding: 1px 0;  /*espaçamento interno*/
+    font-size: 15px;  /*tamanho da fonte*/
 }

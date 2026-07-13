@@ -1,93 +1,92 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8e1;
-    font-weight: 500;
-    font-size: 20px;
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o preenchimento padrão do navegador */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte*/
+    background-color: #F8F4E3; /* Define a cor de fundo do corpo da página */
+    color: #333; /* Define a cor do texto */
+    font-weight: 500; /* Define a espessura da fonte */
+    font-size: 20px; /* Define o tamanho da fonte padrao da pagina */
 }
 
-
-img{
-    float: left;
-    margin-right: 20px;
-    margin-left: 30px;
-    width: 200px;
-    height: auto;
-}
-
+/* TÍTULOS */
 h2 {
-    color: #123c64;
-    font-size: 50px;
+    color: #123c64; /*Cor do título */
+    font-size: 50px; /*Tamanho da fonte */
 }
 
 h3 {
-    color: rgb(57, 105, 139);
-    font-size: 35px;
+    color: #39698b; /*Cor do título */
+    font-size: 35px; /*Tamanho da fonte */
 }
 
 h4 {
-    color: #6c9dcb;
-    font-size: 25px;
+    color: #5f8ebb; /*Cor do título */
+    font-size: 25px; /*Tamanho da fonte */
 }
 
-/* Estilos para a barra de navegação */
+/* BARRA DE NAVEGAÇÃO */
 nav {
-    display: flex;
-    align-items: flex-end;  
-    background-color:#0e3d6b;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    width: 100%; 
-    box-sizing: border-box; 
-    z-index: 1000;
+    display: flex;/* Define o layout como flexível */
+    align-items: center;  /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between;/* Distribui o espaço entre os itens */
+    background-color:#0e3d6b;/* Define a cor de fundo da barra de navegação */
+    padding: 10px 40px;/* Define o espaçamento interno da barra de navegação */
+    position: sticky;/* Mantém a barra de navegação fixa no topo da página */
+    top: 0;/* Define a posição da barra de navegação no topo da página */
+    width: 100%; /* Define a largura da barra de navegação*/
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total do elemento */
+    z-index: 1000; /* Define o índice de empilhamento da barra de navegação */
 }
 
 .logo {
-    width: 100px;
-    height: auto;
-    margin: 0; 
+    display: block; /* Evita comportamentos estranhos em linha */
+    width: 100px; /* Define a largura da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0; /* Remove a margem padrão da imagem */
 }
 
 nav ul {
-    font-size: 25px;
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    align-items: flex-end; 
-    margin: 0 auto; 
+    font-size: 25px; /* Define o tamanho da fonte dos itens da barra de navegação */
+    display: flex; /* Define o layout como flexível */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    font-weight: 500; /* Define a espessura da fonte dos itens da barra de navegação */
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin-left:40px; /* Define a margem à esquerda dos itens da barra de navegação */
+    margin-right:20px; /* Define a margem à direita dos itens da barra de navegação */
 }
 
 nav ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block; /* Define o link como um bloco para facilitar o clique */
+    color: #fff; /* Define a cor do texto dos links */
+    padding: 14px 16px; /* Define o espaçamento interno dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    text-transform: capitalize; /* Deixa a primeira letra maiúscula automaticamente */
 }
 
 nav ul li a:hover {
-  color: rgb(0, 0, 0);
+    color: #071e33; 
 }
 
 
-/* Estilos para o cabeçalho */
+/* CABEÇALHO */
 header{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    margin: 0;/* Remove a margem padrão do navegador */
+    padding: 0;/* Remove o preenchimento padrão do navegador */
+    overflow: hidden;/* Evita que o conteúdo ultrapasse os limites do cabeçalho */
 
-    background-image: url('img/ceuestrelado.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 640px;
+    background-image: url('img/ceuestrelado.jpg'); /* Define a imagem de fundo do cabeçalho */
+    background-position: center;/* Centraliza a imagem de fundo */
+    background-size: cover;/* Ajusta a imagem de fundo para cobrir todo o cabeçalho */
+    background-repeat: no-repeat;/* Evita que a imagem de fundo se repita */
+    min-height: 640px;/* Define a altura mínima do cabeçalho */
 
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);/* Define a cor do texto do cabeçalho */
+    text-align: center;/* Centraliza o texto do cabeçalho */
     font-size: 70px;   
     font-family:cursive;
     display: flex;
@@ -95,21 +94,84 @@ header{
     align-items: center; 
 }
 
-.oqueé{
-    display: flex;
+  /* CORPO DA PÁGINA */
+main section {
+    padding: 0px 5% 0px 5%; 
+    max-width: 1300px;
+    margin: 0 auto; 
 }
 
-livro-do-mes {
+  /*  SEÇÃO O QUE É */
+.oqueé {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
+    gap: 30px; 
+    margin-top: 20px;
 }
 
-.livro-do-mes:after{
-  content: "";
-  clear: both;
-  display: table;
+.oqueé > div {
+    flex: 1;
+    background-color: #aabfec;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+  /* SEÇÃO LIVRO DO MÊS */
+.book-showcase {
+    display: flex;
+    align-items: flex-start; 
+    gap: 50px;               
+    background-color: #aabfec;; 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+/* Força a imagem a ignorar o float antigo */
+.book-showcase .book-media img { 
+    width: 280px;            
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
+
+/* Lado direito: coluna de informações */
+.book-content {
+    flex: 1;                 
+}
+
+.book-content h3 {
+    margin-top: 0;           
+    color: #123c64;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.book-content .book-spec {
+    font-size: 18px;
+    margin: 6px 0;
+    color: #4a5568;
+}
+
+/* Linha divisória */
+.book-content hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+}
+
+.book-content h4 {
+    font-size: 22px;
+    color: #123c64;
+    margin-bottom: 10px;
+}
+
+.book-content .book-description {
+    font-size: 16px;
+    line-height: 1.7;        
+    color: #333333;
+    text-align: justify;     
 }
 
 /*caixa dos planos de assinatura*/
@@ -163,7 +225,7 @@ livro-do-mes {
 
 
 .box ul {
-    list-style-type:circle;
+    list-style-type:none;
     padding-left: 2px;
     margin: 2px;
 }
@@ -171,22 +233,28 @@ livro-do-mes {
 .box ul li {
     color: #4a5568;
     font-size: 15px;
-    list-style-type: none;
     margin-bottom: 8px;
     position: relative;
     padding-left: 20px; 
 }
 
-footer {
-    background-color: #0e3d6b;
-    color: white;
-    text-align: center;
-    margin-top: 40px;
+.preço {
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    flex-direction: row;
+    align-items: baseline;
+}
+.preço h3 {
+    margin-left: 5px;
     font-size: 15px;
+    color: #223659;
+}
+
+  /* O RODAPE DO SITE */
+footer {
+    background-color: #0e3d6b;  /*cor de fundo do rodape*/
+    color: white;  /*cor da fonte*/
+    text-align: center;  /*alinha o texto no centro*/
+    margin-top: 40px;  /*distância do topo*/
+    padding: 1px 0;  /*espaçamento interno*/
+    font-size: 15px;  /*tamanho da fonte*/
 }
